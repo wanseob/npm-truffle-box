@@ -1,0 +1,21 @@
+{
+  "ignore": [
+    "README.md",
+    "node_modules",
+    "build",
+    "box-img-lg.png",
+    "box-img-sm.png"
+  ],
+  "commands": {
+    "Test": "npm run test",
+    "Test contracts only": "npm run testContracts",
+    "Test module only": "npm run testModule",
+    "Lint javascript": "npm run standard",
+    "Lint solidity": "npm run ethlint",
+    "Modularize your project": "npm run modularize",
+    "Deploy module": "npm deploy"
+  },
+  "hooks": {
+    "post-unpack": "npm install"
+  }
+}
