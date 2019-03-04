@@ -7,13 +7,13 @@
   },
   "scripts": {
     "postinstall": "chmod +x scripts/*",
-    "standard": "./node_modules/.bin/standard test/** src/** --fix",
-    "ethlint": "./node_modules/.bin/solium -d contracts --fix",
+    "standard": ".\"/node_modules/.bin/standard\" test/** src/** --fix",
+    "ethlint": ".\"/node_modules/.bin/solium\" -d contracts --fix",
     "precommit": "lint-staged && npm run test",
-    "modularize": "./node_modules/.bin/truffle run modularize",
-    "testContracts": "./scripts/test_contracts.sh",
-    "testModule": "./scripts/test_module.sh",
-    "test": "./scripts/test.sh"
+    "modularize": ".\"/node_modules/.bin/truffle\" run modularize",
+    "testContracts": ".\"/scripts/test_contracts.sh\"",
+    "testModule": ".\"/scripts/test_module.sh\"",
+    "test": ".\"/scripts/test.sh\""
   },
   "devDependencies": {
     "chai": "^4.2.0",
