@@ -43,7 +43,12 @@ See [this](https://github.com/wanseob/truffle-plugin-modularizer) to get more de
     }
    ```
    
-5. Configure your package.json
+5. Modularize your smart contract as a node module. The following command will automatically generate the `src/index.js` file which contains your smart contracts as `truffle-contract` instances
+	```javascript
+  npm run modularize
+  ```
+
+6. Configure your package.json
 	```javascript
 	//package.json
 	{
@@ -53,7 +58,7 @@ See [this](https://github.com/wanseob/truffle-plugin-modularizer) to get more de
         ...
 	}
 	```
-5. 	Deploy to npm
+7. 	Deploy to npm
 	```bash
 	npm publish
 	```
@@ -97,13 +102,10 @@ See [this](https://github.com/wanseob/truffle-plugin-modularizer) to get more de
 If you don't prefer standard style and ethlint, remove "pre-commit" property from the `package.json` .
 
 
-
-# Limitation
-
-It only supports linux & macOS
-
-
-
 # License
 
 [Apache-2.0](LICENSE)
+
+# Contributors
+
+[@wanseob](https://github.com/wanseob) [@gurrpi](https://github.com/gurrpi) [@jacobcreech](https://github.com/jacobcreech)
