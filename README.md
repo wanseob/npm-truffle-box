@@ -45,8 +45,8 @@ See [this](https://github.com/wanseob/truffle-plugin-modularizer) to get more de
    
 5. Modularize your smart contract as a node module. The following command will automatically generate the `src/index.js` file which contains your smart contracts as `truffle-contract` instances
 	```javascript
-  npm run modularize
-  ```
+	npm run modularize
+	```
 
 6. Configure your package.json
 	```javascript
@@ -58,6 +58,7 @@ See [this](https://github.com/wanseob/truffle-plugin-modularizer) to get more de
         ...
 	}
 	```
+	
 7. 	Deploy to npm
 	```bash
 	npm publish
