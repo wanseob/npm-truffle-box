@@ -59,7 +59,7 @@ test_contracts_and_module() {
   ./node_modules/.bin/truffle migrate --network test --reset --quiet
   ./node_modules/.bin/truffle test --network test
   ./node_modules/.bin/truffle run modularize --output build/index.tmp.js --network test
-  ./node_modules/.bin/mocha moduleTest --exit
+  ./node_modules/.bin/mocha moduleTest/**/*.js --exit
   [ $? -ne 0 ] && exit 1
 }
 
